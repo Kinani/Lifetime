@@ -26,5 +26,10 @@ namespace Lifetime
         {
             this.InitializeComponent();
         }
+
+        private void BirthDatePicker_DateChanged(object sender, DatePickerValueChangedEventArgs e)
+        {
+
+        }
     }
 }

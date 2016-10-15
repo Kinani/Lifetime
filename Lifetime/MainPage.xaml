@@ -8,6 +8,17 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <DatePicker x:Name="BirthDatePicker" Header="Your birth date" DateChanged="BirthDatePicker_DateChanged"/>
+            <TextBlock x:Name="AgeHeader" Margin="0,20,0,0" Text="Your life:" Visibility="Collapsed"/>
+            <TextBlock x:Name="AgeTxtBlck" Margin="0,0,0,0" Visibility="Collapsed" Text="Please enter your birth date first."/>
+        </StackPanel>
+        <StackPanel Grid.Row="1">
+            <TextBlock x:Name="myFuckingCredit" FontSize="9" Text="These couple lines of code written by: Abdelrahman El Kinani"/>
+        </StackPanel>
     </Grid>
 </Page>
